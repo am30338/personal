@@ -1,0 +1,12 @@
+<h1>Pusheens say...</h1>
+<%=link_to "New Tweet", new_tweet_path %>
+<% @tweets.each do |tweet| %>
+  <p>
+    <%= link_to tweet.user.email, user_path(tweet.user) %><br/>
+    <%= tweet.body %>
+  </p>
+<% end %>
+
+<img src="http://25.media.tumblr.com/tumblr_mbfumzh9Ng1qhy6c9o1_500.gif" alt = "Pusheen is riding a horse.">
+
+<br> </br>
